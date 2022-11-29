@@ -1,0 +1,33 @@
+.Checkbox {
+  stroke-width: 2px;
+
+  &-Box {
+    stroke-dasharray: 86;
+    stroke-dashoffset: 0;
+    transition:
+      color 0.12s ease-out,
+      stroke-dasharray 0.12s ease-out,
+      stroke-dashoffset 0.12s ease-out;
+  }
+
+  &-Checkmark {
+    stroke-dasharray: 23;
+    stroke-dashoffset: 23;
+    transition:
+      color 0.12s ease-out,
+      stroke-dashoffset 0.12s ease-out;
+  }
+
+  &__checked {
+    color: slategray;
+
+    .Checkbox-Box {
+      stroke-dasharray: 60;
+      stroke-dashoffset: -11;
+    }
+
+    .Checkbox-Checkmark {
+      stroke-dashoffset: 0;
+    }
+  }
+}

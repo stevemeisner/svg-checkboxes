@@ -1,0 +1,17 @@
+.button {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  background-color: transparent;
+
+  &:not(:disabled):hover {
+    color: rebeccapurple;
+  }
+
+  & + & {
+    margin-top: 0.5rem;
+  }
+}
